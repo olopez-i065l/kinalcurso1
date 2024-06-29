@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div id="contenedor">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="pantalla" disabled></td>
+            </tr>
+            <tr>
+                <td><button onclick="limpiarPantalla()">C</button></td>
+                <td><button onclick="operacion('^')">^</button></td>
+                <td><button onclick="porcentaje()">%</button></td>
+                <td><button onclick="operacion('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="marcarBoton('7')">7</button></td>
+                <td><button onclick="marcarBoton('8')">8</button></td>
+                <td><button onclick="marcarBoton('9')">9</button></td>
+                <td><button onclick="operacion('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="marcarBoton('4')">4</button></td>
+                <td><button onclick="marcarBoton('5')">5</button></td>
+                <td><button onclick="marcarBoton('6')">6</button></td>
+                <td><button onclick="operacion('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="marcarBoton('1')">1</button></td>
+                <td><button onclick="marcarBoton('2')">2</button></td>
+                <td><button onclick="marcarBoton('3')">3</button></td>
+                <td><button onclick="operacion('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarSigno()">+/-</button></td>
+                <td><button onclick="marcarBoton('0')">0</button></td>
+                <td><button onclick="marcarBoton('.')">.</button></td>
+                <td><button onclick="calcular()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
